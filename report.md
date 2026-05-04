@@ -16,12 +16,12 @@
 - Add some data from using Python and faker: [generate.py](./data/generate.py)
 
 ## Queries: 
-### Query One -
+### Query One - [queryOne.sql](./queries/queryOne.sql)
 A new guest would like to reserve a room in Hotel A from July 15th (check-in) to July 17th (check-out). The guest qualifies as a VIP customer. The select query should return all the different room types that are available in the hotel for those two nights, along with be the average cost per night for that room type (cost per night divided by # of nights). The cost per night must take into account the current season and the days of the week of the requested dates of stay, along with any special rates for gold customers.
 The insert queries should insert the new guest and reserve one room of one of the available room types for the guest on their desired dates in the desired hotel.
 There must be data in the tables such that there is at least one room type that is not available on the requested day(s), and the room price must vary across the 2 days due to the day of the week. You may assume that the whole day period falls fully within one season. The selected customer category must change the overall price.
 
-### Query Two - 
+### Query Two - [queryTwo.sql](./queries/queryTwo.sql)
 Mr. and Mrs. Smith arrive at Hotel B in the late afternoon on the day of their reservation. They have previously reserved a room type double. In order to give the Smiths their room, the desk clerk needs to find an appropriate room. The select query should list all the room numbers of double rooms that are currently unoccupied. The insert quer(ies) should assign the room, assuming Mrs. Smith is the guest who made the reservation, and Mr. Smith an occupant who was not previously in the database.
 This query should assume the reservation for Mrs. Smith already exists in the database. There should be at least 1 room of the reserved room type that is already occupied and is not returned as an available room.
 
