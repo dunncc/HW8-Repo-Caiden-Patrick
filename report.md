@@ -13,7 +13,7 @@
 - Add constraints to tables: [alter.sql](./database/alter.sql)
 
 ## Data:
-Add some data from using Python Faker - 
+- Add some data from using Python and faker: [generate.py](./data/generate.py)
 
 ## Queries: 
 ### Query One -
