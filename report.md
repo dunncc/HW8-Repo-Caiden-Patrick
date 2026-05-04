@@ -20,7 +20,7 @@
 This query finds all available room types in a specific hotel for a given date range and calculates the average nightly cost based on seasonal pricing, day of the week rates, and guest discounts. It only selects rooms not currently occupied during the requested dates.
 
 ### Query Two - [queryTwo.sql](./queries/queryTwo.sql)
-This query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in. It doesn't include rooms that are already occupied. 
+This query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in.
 
 ### Query Three - 
 
