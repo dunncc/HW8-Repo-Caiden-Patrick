@@ -15,3 +15,9 @@ AND Season.EndDate
 AND RoomPrice.DayOfWeek IN ('Tuesday','Wednesday') 
 AND Occupies.OccupiesID IS NULL
 GROUP BY RoomType.TypeID, RoomType.Name;
+
+INSERT INTO Guest (GuestUID, IdentificationType, IdentificationNumber, Address, HomePhone, MobilePhone, CategoryID)
+VALUES (1000, 'SSN', '123-45-6789', '6767 Epic Rd', '804-2650', '111-2222', 1);
+
+INSERT INTO ReservationRoomRequest (RequestID, ReservationID, TypeID, Quantity)
+VALUES (3000, 2000, 2, 1);
