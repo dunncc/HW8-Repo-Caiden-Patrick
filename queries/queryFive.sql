@@ -1,4 +1,4 @@
-select sum(TotalAmount)
+select GuestID, sum(TotalAmount)
 FROM Invoice
 JOIN Reservation as r1 on Reservation.ReservationID = Invoice.ReservationID
 WHERE EXISTS (SELECT 1 FROM Reservation as r2 WHERE

@@ -24,6 +24,11 @@ This query selects all currently unoccupied rooms of a specific room type in a h
 
 ### Query Three - 
 
-### Query Four - 
+### Query Four - [queryFour.sql](./queries/queryFour.sql)
+This query selects the names of all Occupants, and selects the names of all Guests.
+Guests count as both, so they'll show up twice.
 
-### Query Five - 
+
+### Query Five - [queryFive.sql](./queries/queryFive.sql)
+This query selects the sums of the totalAmount in Invoice a given guest has.
+Also gives the GuestID so you know who its about.
