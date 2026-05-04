@@ -5,6 +5,7 @@
 ![Hotel EER](./images/HotelEER.drawio.png)
 
 ## Relational Model:
+![Hotel EER](./images/HotelRelationshipMode.png)
 
 ## Database Creation:
 Drop Tables - 
