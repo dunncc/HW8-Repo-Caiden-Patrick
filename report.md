@@ -2,6 +2,7 @@
 *Patrick Buehlmann & Caiden Dunn*
 
 ## ER Model: 
+![Hotel EER](./images/HotelEER.drawio.png)
 
 ## Relational Model:
 
