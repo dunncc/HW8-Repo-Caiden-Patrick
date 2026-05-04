@@ -8,9 +8,9 @@
 ![Hotel EER](./images/HotelRelationshipMode.png)
 
 ## Database Creation:
-Drop Tables - 
-Create Tables - 
-Alter Tables - 
+- Drop tables: [drop.sql](./database/drop.sql)
+- Create tables: [create.sql](./database/alter.sql)
+- Add constraints to tables: [alter.sql](./database/alter.sql)
 
 ## Data:
 Add some data from using Python Faker - 
