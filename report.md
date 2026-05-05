@@ -22,7 +22,8 @@ This query finds all available room types in a specific hotel for a given date r
 ### Query Two - [queryTwo.sql](./queries/queryTwo.sql)
 This query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in.
 
-### Query Three - 
+### Query Three - [queryThreee.sql](./queries/queryThree.sql)
+
 
 ### Query Four - [queryFour.sql](./queries/queryFour.sql)
 This query selects the names of all Occupants, and selects the names of all Guests.
