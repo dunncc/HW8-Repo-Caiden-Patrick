@@ -6,6 +6,8 @@ VALUES (1,1,1,10.0)--In order: ReversationID (So the smiths' reversationID), ser
 SELECT CheckInDate, CheckOutDate, Room.TypeID, sum(ServiceUsage.priceCharged*quantity) + RoomPrice.price * GuestCategory.DiscountPercent as TotalAmount
 FROM Reservation
 
+
+--Final part
 UPDATE Occupies
 SET EndDateTime = CURRENT_TIMESTAMP
 WHERE ReservationID = 5
