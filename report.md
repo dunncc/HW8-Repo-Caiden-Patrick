@@ -23,7 +23,7 @@ This query finds all available room types in a specific hotel for a given date r
 This query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in.
 
 ### Query Three - [queryThreee.sql](./queries/queryThree.sql)
-
+This quert marks the reservation as checked out by setting the end time, then finds the total cost of the stay and inserts that amount as a new invoice for the reservation.
 
 ### Query Four - [queryFour.sql](./queries/queryFour.sql)
 This query selects the names of all Occupants, and selects the names of all Guests.
