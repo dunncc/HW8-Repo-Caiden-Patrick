@@ -20,7 +20,7 @@
 This query finds all available room types in a specific hotel for a given date range and calculates the average nightly cost based on seasonal pricing, day of the week rates, and guest discounts. It only selects rooms not currently occupied during the requested dates.
 
 ### Query Two - [queryTwo.sql](./queries/queryTwo.sql)
-This query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in.
+This first query selects all currently unoccupied rooms of a specific room type in a hotel at the time of check in. We looked for a room from Hotel #2, with a double room room type, that is NOT OCCUPIED. Our query returned room numbers 16 and 17. The first INSERT query insert into the Occupies database, adding a row including the OccupiedID (Unique), ReservationID (Unique), HotelID used in the select query, the RoomNumber returned from the previous query, CURRENT_TIMESTAMP for the StartDateTime, and NULL for the EndDateTime. The second and third INSERT query add Mrs. Smith and Mr. Smith into the Occupant database, both using a unique OccupantID, the same OccupiesID from the previous query, and their names.
 
 ### Query Three - [queryThreee.sql](./queries/queryThree.sql)
 This quert marks the reservation as checked out by setting the end time, then finds the total cost of the stay and inserts that amount as a new invoice for the reservation.
