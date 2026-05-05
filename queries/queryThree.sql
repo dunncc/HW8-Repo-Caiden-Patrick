@@ -5,6 +5,13 @@ VALUES (1,1,1,10.0)--In order: ReversationID (So the smiths' reversationID), ser
 --SELECT query
 SELECT CheckInDate, CheckOutDate, Room.TypeID, sum(ServiceUsage.priceCharged*quantity) + RoomPrice.price * GuestCategory.DiscountPercent as TotalAmount
 FROM Reservation
+JOIN Occupies on Reservation.ReservationID = Occupies.ReservationID
+JOIN Room on Room.HotelID = Occupies.HotelID AND Room.RoomNumber = Occupies.RoomNumber
+JOIN RoomType on Room.TypeID = RoomType.TypeID
+JOIN RoomPrice on RoomPrice.TypeID = RoomType.TypeID
+JOIN ServiceUsage Reservation.ReservationID = ServiceUsage.ReservationID 
+JOIN Guest on Reservation.GuestUID = Guest.GuestUID
+JOIN GuestCategory on GuestCategory.CategoryID = Guest.CategoryID
 
 
 --Final part
