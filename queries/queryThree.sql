@@ -12,7 +12,7 @@ WHERE ReservationID = 5
 AND EndDateTime IS NULL;
 
 INSERT INTO Invoice (InvoiceID, ReservationID, IssueDate, TotalAmount)
-VALUES((SELECT MAX(InvoiceID) + 1 FROM Invoice), 5, CURRENT_DATE,(SELECT SUM(RoomPrice.Price * (1 - GuestCategory.DiscountPercent / 100.0)) + COALESCE(SUM(ServiceUsage.PriceCharged), 0)
+VALUES((SELECT MAX(InvoiceID) + 1 FROM Invoice), 5, CURRENT_DATE,(SELECT SUM(RoomPrice.Price * (1 - GuestCategory.DiscountPercent / 100.0)) + SUM(ServiceUsage.PriceCharged))
 FROM Reservation
 JOIN Guest ON Guest.GuestUID = Reservation.GuestUID
 JOIN GuestCategory ON GuestCategory.CategoryID = Guest.CategoryID
